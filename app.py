@@ -58,7 +58,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # --- GLOBAL HARDWARE CONFIG ---
-st.sidebar.title(" Hardware Link")
+st.sidebar.title("Hardware Link")
 cam_ip = st.sidebar.text_input("Camera Core IP:", "192.168.43.101")
 motor_ip = st.sidebar.text_input("Drive System IP:", "192.168.43.102")
 
