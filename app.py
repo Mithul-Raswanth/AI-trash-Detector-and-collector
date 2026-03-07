@@ -128,3 +128,17 @@ with tab_live:
         </script>
         """
         components.html(joystick_html, height=220)
+
+
+# ==========================================
+# FOOTER (Team Credits)
+# ==========================================
+st.markdown("""
+    <hr style='border: none; border-top: 1px solid #E5E5EA; margin-top: 60px; margin-bottom: 20px;'>
+    <p style='text-align: center; color: #86868B; font-size: 14px; font-weight: 500; font-family: -apple-system, BlinkMacSystemFont, sans-serif;'>
+        Engineered for the elements by<br>
+        <span style='color: #000000; font-size: 16px; font-weight: 600;'>
+            Akshadha • Krishna Priya • Mithul Raswanth • Mohit • Santosh Kamaraj
+        </span>
+    </p>
+""", unsafe_allow_html=True)
