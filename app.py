@@ -58,9 +58,10 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # --- GLOBAL HARDWARE CONFIG ---
-st.sidebar.title("Hardware Link")
-cam_ip = st.sidebar.text_input("Camera Core IP:", "192.168.43.101")
-motor_ip = st.sidebar.text_input("Drive System IP:", "192.168.43.102")
+st.sidebar.title("⚙️ Hardware Link")
+master_ip = st.sidebar.text_input("Master System IP:", "192.168.43.101")
+cam_ip = f"{master_ip}:81"  # Port 81 handles the video stream
+motor_ip = f"{master_ip}:82" # Port 82 handles our new motor code
 
 # --- HEADER ---
 st.markdown('<p class="main-title">ClearWater.</p>', unsafe_allow_html=True)
